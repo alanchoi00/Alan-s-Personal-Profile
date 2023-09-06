@@ -1,27 +1,74 @@
-.desktop {
-  background-color: #ffffff;
+.main {
+  background-color: #f1f1f1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
 
-.desktop .div-wrapper {
-  background-color: #ffffff;
+.main .header-wrapper {
+  background-color: #f1f1f1;
   width: 1440px;
-  height: 1024px;
-  position: relative;
+  height: 4806px;
 }
 
-.desktop .text-wrapper {
+.main .header {
+  display: flex;
+  width: 1440px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 92px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.main .name-logo {
+  position: relative;
+  width: 112px;
+  height: 47px;
+}
+
+.main .text-wrapper {
   position: absolute;
-  top: 487px;
-  left: 612px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 40px;
+  top: -1px;
+  left: 0;
+  font-family: "Rubik-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-header-text-colour);
+  font-size: 36px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+}
+
+.main .frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 70px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.main .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.main .div {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  transition: all 0.2s ease;
+  font-family: var(--header-text-font-family);
+  font-weight: var(--header-text-font-weight);
+  color: var(--variable-collection-header-text-colour);
+  font-size: var(--header-text-font-size);
+  letter-spacing: var(--header-text-letter-spacing);
+  line-height: var(--header-text-line-height);
+  white-space: nowrap;
+  font-style: var(--header-text-font-style);
 }
